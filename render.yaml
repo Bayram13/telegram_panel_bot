@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-panel-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: TOKEN
+        value: 8024553112:AAHacfh8tTrzAre3Tc-EHV9bKsjylo43JiI
+      - key: ADMIN_ID
+        value: "5490094790"
